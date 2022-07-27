@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/07/26 19:22:54.000.059,=C:\Users\etec\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/07/26 19:26:33.000.601,C:\Users\etec\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\etec\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2022/07/26 19:26:33.000.962,=C:\Users\etec\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/07/26 19:40:28.000.018,C:\Users\etec\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\etec\Desktop\dephi 26-07\form1.dfm</Transaction>
+    <Transaction>2022/07/26 19:40:28.000.018,C:\Users\etec\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\etec\Desktop\dephi 26-07\form1.pas</Transaction>
+    <Transaction>2022/07/26 19:40:51.000.450,C:\Users\etec\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\etec\Desktop\Project1.dproj</Transaction>
+    <Transaction>2022/07/26 20:11:06.574,=C:\Users\etec\Desktop\dephi 26-07\Unit2.pas</Transaction>
+    <Transaction>2022/07/26 20:33:54.707,C:\Users\etec\Desktop\dephi 26-07\untCalc.pas=C:\Users\etec\Desktop\dephi 26-07\Unit2.pas</Transaction>
+    <Transaction>2022/07/26 20:33:54.707,C:\Users\etec\Desktop\dephi 26-07\untCalc.dfm=C:\Users\etec\Desktop\dephi 26-07\Unit2.dfm</Transaction>
+  </Transactions>
+</BorlandProject>
