@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/09/06 19:17:58.000.926,=C:\Users\etec\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/09/06 19:53:11.000.245,C:\Users\etec\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\etec\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2022/09/06 19:53:11.000.569,=C:\Users\etec\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2022/09/06 19:59:06.000.892,C:\Users\etec\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\etec\Documents\Embarcadero\Studio\Projects\prjJogoVelha.dproj</Transaction>
+    <Transaction>2022/09/06 19:59:41.000.019,=C:\Users\etec\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/09/06 20:00:00.000.570,C:\Users\etec\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\etec\Documents\Embarcadero\Studio\Projects\untJogVelha.dfm</Transaction>
+    <Transaction>2022/09/06 20:00:00.000.570,C:\Users\etec\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\etec\Documents\Embarcadero\Studio\Projects\untJogVelha.pas</Transaction>
+  </Transactions>
+</BorlandProject>
