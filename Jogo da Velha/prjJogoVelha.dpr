@@ -2,7 +2,7 @@ program prjJogoVelha;
 
 uses
   Vcl.Forms,
-  untJogVelha in 'untJogVelha.pas' {frmJogoVelha},
+  untJogoVelha in 'untJogoVelha.pas' {frmJogoVelha},
   Vcl.Themes,
   Vcl.Styles;
 
@@ -11,7 +11,6 @@ uses
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  TStyleManager.TrySetStyle('Tablet Dark');
   Application.CreateForm(TfrmJogoVelha, frmJogoVelha);
   Application.Run;
 end.
