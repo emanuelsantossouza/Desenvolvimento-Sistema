@@ -2,7 +2,7 @@ program Project1;
 
 uses
   Vcl.Forms,
-  Trabalho in '..\..\Documents\Embarcadero\Studio\Projects\Trabalho.pas' {Form1};
+  Unit1 in '..\..\Documents\Embarcadero\Studio\Projects\Unit1.pas' {Form1};
 
 {$R *.res}
 
