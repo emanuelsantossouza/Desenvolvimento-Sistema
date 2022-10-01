@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{5A09583A-379D-49FB-97D6-F8050CE95AC4}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="..\Desenvolvimento-Sistema\Lista de Execicios If,While,for\Peso Ideal\prjPeso.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Desenvolvimento-Sistema\Lista de Execicios If,While,for\prjca.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="prjPeso">
+        <MSBuild Projects="..\Desenvolvimento-Sistema\Lista de Execicios If,While,for\Peso Ideal\prjPeso.dproj"/>
+    </Target>
+    <Target Name="prjPeso:Clean">
+        <MSBuild Projects="..\Desenvolvimento-Sistema\Lista de Execicios If,While,for\Peso Ideal\prjPeso.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="prjPeso:Make">
+        <MSBuild Projects="..\Desenvolvimento-Sistema\Lista de Execicios If,While,for\Peso Ideal\prjPeso.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="prjca">
+        <MSBuild Projects="..\Desenvolvimento-Sistema\Lista de Execicios If,While,for\prjca.dproj"/>
+    </Target>
+    <Target Name="prjca:Clean">
+        <MSBuild Projects="..\Desenvolvimento-Sistema\Lista de Execicios If,While,for\prjca.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="prjca:Make">
+        <MSBuild Projects="..\Desenvolvimento-Sistema\Lista de Execicios If,While,for\prjca.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="prjPeso;prjca"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="prjPeso:Clean;prjca:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="prjPeso:Make;prjca:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

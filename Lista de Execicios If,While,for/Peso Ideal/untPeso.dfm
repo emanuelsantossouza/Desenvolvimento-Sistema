@@ -80,7 +80,7 @@ object frm: Tfrm
     Left = 360
     Top = 96
     Width = 121
-    Height = 97
+    Height = 21
     TabOrder = 4
   end
 end
