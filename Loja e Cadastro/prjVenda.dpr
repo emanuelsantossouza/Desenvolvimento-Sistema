@@ -1,8 +1,8 @@
-program Project1;
+program prjVenda;
 
 uses
   Vcl.Forms,
-  Unit1 in '..\..\Documents\Embarcadero\Studio\Projects\Unit1.pas' {Form1};
+  untPrincipal in 'untPrincipal.pas' {Form1};
 
 {$R *.res}
 
