@@ -58491,12 +58491,14 @@ object frmPrincipal: TfrmPrincipal
       Caption = 'Cadastros'
       object Cidade1: TMenuItem
         Caption = 'Cidade'
+        OnClick = Cidade1Click
       end
       object Cliente1: TMenuItem
         Caption = 'Cliente'
       end
       object Produto1: TMenuItem
         Caption = 'Produto'
+        OnClick = Produto1Click
       end
     end
     object Venda1: TMenuItem

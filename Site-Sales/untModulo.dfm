@@ -19,9 +19,9 @@ object Modulo: TModulo
   end
   object FDPhysMySQLDriverLink1: TFDPhysMySQLDriverLink
     VendorLib = 
-      'C:\Users\etec\Desktop\turmaA_SistemaVenda\versao_2510\libmysql.d' +
-      'll'
-    Left = 32
+      'C:\Users\etec\Desktop\Desenvolvimento-Sistema\Site-Sales\libmysq' +
+      'l.dll'
+    Left = 48
     Top = 152
   end
   object qryCidade: TFDQuery
@@ -31,22 +31,34 @@ object Modulo: TModulo
     Left = 176
     Top = 96
     object qryCidadeIDCIDADE: TIntegerField
-      FieldName = 'C'#243'digo'
+      FieldName = 'IDCIDADE'
       Origin = 'IDCIDADE'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
       Required = True
     end
     object qryCidadeNOMECIDADE: TStringField
       AutoGenerateValue = arDefault
-      FieldName = 'Nome'
+      FieldName = 'NOMECIDADE'
       Origin = 'NOMECIDADE'
       Size = 50
     end
     object qryCidadeSIGLAESTADO: TStringField
       AutoGenerateValue = arDefault
-      FieldName = 'Sigla'
+      FieldName = 'SIGLAESTADO'
       Origin = 'SIGLAESTADO'
       Size = 2
     end
+  end
+  object qryAutoNum: TFDQuery
+    Connection = conexao
+    Left = 264
+    Top = 96
+  end
+  object qryProduto: TFDQuery
+    Connection = conexao
+    SQL.Strings = (
+      'Select * From Produto')
+    Left = 336
+    Top = 96
   end
 end

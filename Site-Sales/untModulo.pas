@@ -19,10 +19,13 @@ type
     qryCidadeIDCIDADE: TIntegerField;
     qryCidadeNOMECIDADE: TStringField;
     qryCidadeSIGLAESTADO: TStringField;
+    qryAutoNum: TFDQuery;
+    qryProduto: TFDQuery;
   private
     { Private declarations }
   public
     { Public declarations }
+    function AutoNum(id, table:string):string;    //Ctrl + shift + c
   end;
 
 var
@@ -33,5 +36,25 @@ implementation
 {%CLASSGROUP 'Vcl.Controls.TControl'}
 
 {$R *.dfm}
+
+{ TModulo }
+
+function TModulo.AutoNum(id, table: string): string;
+var vSQL:string;
+begin
+     vSQL := '';
+     qryAutoNum.close;
+
+     vSQL := 'SELECT MAX('+ id + ') + 1 FROM '+ table;
+     qryAutoNum.SQL.CommaText := vSQL;
+     qryAutoNum.Open;
+
+     if qryAutoNum.fields[0].AsString = '' then
+      AutoNum := '1'
+      else
+        AutoNum := qryAutoNum.Fields[0].AsString;
+
+
+end;
 
 end.

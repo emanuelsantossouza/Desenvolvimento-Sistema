@@ -21,6 +21,8 @@ type
     Image1: TImage;
     procedure TimerTimer(Sender: TObject);
     procedure Sair1Click(Sender: TObject);
+    procedure Cidade1Click(Sender: TObject);
+    procedure Produto1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -33,6 +35,19 @@ var
 implementation
 
 {$R *.dfm}
+
+uses untCadCidade;
+
+procedure TfrmPrincipal.Cidade1Click(Sender: TObject);
+begin
+      Application.CreateForm(TfrmCadCidade,frmCadCidade);
+      frmCadCidade.Show
+end;
+
+procedure TfrmPrincipal.Produto1Click(Sender: TObject);
+begin
+    Application.CreateFrom(Tfrm)
+end;
 
 procedure TfrmPrincipal.Sair1Click(Sender: TObject);
 begin

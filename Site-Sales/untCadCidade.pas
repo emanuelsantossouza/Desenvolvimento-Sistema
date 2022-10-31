@@ -10,11 +10,12 @@ uses
 type
   TfrmCadCidade = class(TfrmPadrao)
     Label1: TLabel;
-    DBEdit1: TDBEdit;
+    dbeCodCidade: TDBEdit;
     Label2: TLabel;
-    DBEdit2: TDBEdit;
+    dbeNomeCidade: TDBEdit;
     Label3: TLabel;
-    DBEdit3: TDBEdit;
+    dbeSiglaEstado: TDBEdit;
+    procedure btnAdicionarClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -29,5 +30,11 @@ implementation
 {$R *.dfm}
 
 uses untModulo;
+
+procedure TfrmCadCidade.btnAdicionarClick(Sender: TObject);
+begin
+  inherited;
+  Modulo.qryCidadeIDCIDADE.AsString:= Modulo.AutoNum('IDCIDADE', 'CIDADE');
+end;
 
 end.
