@@ -36,7 +36,7 @@ implementation
 
 {$R *.dfm}
 
-uses untCadCidade;
+uses untCadCidade, untCadProduto;
 
 procedure TfrmPrincipal.Cidade1Click(Sender: TObject);
 begin
@@ -46,7 +46,8 @@ end;
 
 procedure TfrmPrincipal.Produto1Click(Sender: TObject);
 begin
-    Application.CreateFrom(Tfrm)
+    Application.CreateForm(TfrmCadProduto,frmCadProduto);
+    frmCadProduto.Show;
 end;
 
 procedure TfrmPrincipal.Sair1Click(Sender: TObject);

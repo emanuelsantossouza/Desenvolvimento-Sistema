@@ -21,6 +21,10 @@ type
     qryCidadeSIGLAESTADO: TStringField;
     qryAutoNum: TFDQuery;
     qryProduto: TFDQuery;
+    qryProdutoIDPRODUTO: TIntegerField;
+    qryProdutoDESCRPRODUTO: TStringField;
+    qryProdutoVALORPRODUTO: TBCDField;
+    qryProdutoQTDEPRODUTO: TIntegerField;
   private
     { Private declarations }
   public

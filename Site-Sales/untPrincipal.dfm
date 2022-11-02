@@ -58457,10 +58457,8 @@ object frmPrincipal: TfrmPrincipal
       98F51CB823E80C9A18FD09E72E0D06830E18F55E7E8C61C9E8D8E4C3CE0C3C47
       B740EB39ECE963D070C3411868349D279D4E3B9831FFD9}
     Stretch = True
-    ExplicitLeft = 48
-    ExplicitTop = 176
-    ExplicitWidth = 105
-    ExplicitHeight = 105
+    ExplicitLeft = -8
+    ExplicitTop = -6
   end
   object stsBar: TStatusBar
     Left = 0

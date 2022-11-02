@@ -60,5 +60,30 @@ object Modulo: TModulo
       'Select * From Produto')
     Left = 336
     Top = 96
+    object qryProdutoIDPRODUTO: TIntegerField
+      FieldName = 'IDPRODUTO'
+      Origin = 'IDPRODUTO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object qryProdutoDESCRPRODUTO: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'DESCRPRODUTO'
+      Origin = 'DESCRPRODUTO'
+      Size = 50
+    end
+    object qryProdutoVALORPRODUTO: TBCDField
+      AutoGenerateValue = arDefault
+      FieldName = 'VALORPRODUTO'
+      Origin = 'VALORPRODUTO'
+      currency = True
+      Precision = 8
+      Size = 2
+    end
+    object qryProdutoQTDEPRODUTO: TIntegerField
+      AutoGenerateValue = arDefault
+      FieldName = 'QTDEPRODUTO'
+      Origin = 'QTDEPRODUTO'
+    end
   end
 end

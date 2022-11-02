@@ -118,7 +118,7 @@
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="untCadProduto.pas">
-            <Form>frmPadrao1</Form>
+            <Form>frmCadProduto</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">

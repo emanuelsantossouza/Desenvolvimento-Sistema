@@ -6,7 +6,7 @@ uses
   untPadrao in 'untPadrao.pas' {frmPadrao},
   untModulo in 'untModulo.pas' {Modulo: TDataModule},
   untCadCidade in 'untCadCidade.pas' {frmCadCidade},
-  untCadProduto in 'untCadProduto.pas' {frmPadrao1};
+  untCadProduto in 'untCadProduto.pas' {frmCadProduto};
 
 {$R *.res}
 
@@ -15,6 +15,5 @@ begin
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TModulo, Modulo);
   Application.CreateForm(TfrmPrincipal, frmPrincipal);
-  Application.CreateForm(TfrmPadrao1, frmPadrao1);
   Application.Run;
 end.
