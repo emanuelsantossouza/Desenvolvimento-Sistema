@@ -6,7 +6,8 @@ uses
   untPadrao in 'untPadrao.pas' {frmPadrao},
   untModulo in 'untModulo.pas' {Modulo: TDataModule},
   untCadCidade in 'untCadCidade.pas' {frmCadCidade},
-  untCadProduto in 'untCadProduto.pas' {frmCadProduto};
+  untCadProduto in 'untCadProduto.pas' {frmCadProduto},
+  untCadCliente in 'untCadCliente.pas' {frmCadCliente};
 
 {$R *.res}
 

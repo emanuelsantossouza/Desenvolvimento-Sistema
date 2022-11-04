@@ -58493,6 +58493,7 @@ object frmPrincipal: TfrmPrincipal
       end
       object Cliente1: TMenuItem
         Caption = 'Cliente'
+        OnClick = Cliente1Click
       end
       object Produto1: TMenuItem
         Caption = 'Produto'

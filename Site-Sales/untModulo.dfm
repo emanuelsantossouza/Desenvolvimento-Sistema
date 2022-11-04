@@ -21,7 +21,7 @@ object Modulo: TModulo
     VendorLib = 
       'C:\Users\etec\Desktop\Desenvolvimento-Sistema\Site-Sales\libmysq' +
       'l.dll'
-    Left = 48
+    Left = 40
     Top = 152
   end
   object qryCidade: TFDQuery
@@ -84,6 +84,57 @@ object Modulo: TModulo
       AutoGenerateValue = arDefault
       FieldName = 'QTDEPRODUTO'
       Origin = 'QTDEPRODUTO'
+    end
+  end
+  object qryCliente: TFDQuery
+    Connection = conexao
+    SQL.Strings = (
+      'SELECT * FROM CLIENTE')
+    Left = 432
+    Top = 96
+    object qryClienteIDCLIENTE: TIntegerField
+      FieldName = 'IDCLIENTE'
+      Origin = 'IDCLIENTE'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object qryClienteNOMECLIENTE: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'NOMECLIENTE'
+      Origin = 'NOMECLIENTE'
+      Size = 50
+    end
+    object qryClienteENDERCLIENTE: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'ENDERCLIENTE'
+      Origin = 'ENDERCLIENTE'
+      Size = 50
+    end
+    object qryClienteCPFCLIENTE: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'CPFCLIENTE'
+      Origin = 'CPFCLIENTE'
+      EditMask = '000\.000\.000\-00;1;_'
+    end
+    object qryClienteFONECLIENTE: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'FONECLIENTE'
+      Origin = 'FONECLIENTE'
+    end
+    object qryClienteIDCIDADE: TIntegerField
+      AutoGenerateValue = arDefault
+      FieldName = 'IDCIDADE'
+      Origin = 'IDCIDADE'
+    end
+    object qryClienteNOMECIDADE: TStringField
+      FieldKind = fkLookup
+      FieldName = 'NOMECIDADE'
+      LookupDataSet = qryCidade
+      LookupKeyFields = 'IDCIDADE'
+      LookupResultField = 'NOMECIDADE'
+      KeyFields = 'IDCIDADE'
+      Size = 50
+      Lookup = True
     end
   end
 end

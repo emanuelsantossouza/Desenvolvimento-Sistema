@@ -25,6 +25,14 @@ type
     qryProdutoDESCRPRODUTO: TStringField;
     qryProdutoVALORPRODUTO: TBCDField;
     qryProdutoQTDEPRODUTO: TIntegerField;
+    qryCliente: TFDQuery;
+    qryClienteIDCLIENTE: TIntegerField;
+    qryClienteNOMECLIENTE: TStringField;
+    qryClienteENDERCLIENTE: TStringField;
+    qryClienteCPFCLIENTE: TStringField;
+    qryClienteFONECLIENTE: TStringField;
+    qryClienteIDCIDADE: TIntegerField;
+    qryClienteNOMECIDADE: TStringField;
   private
     { Private declarations }
   public
