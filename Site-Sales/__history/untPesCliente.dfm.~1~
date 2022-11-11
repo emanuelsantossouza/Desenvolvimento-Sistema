@@ -1,0 +1,5 @@
+inherited frmPadraoPesquisa2: TfrmPadraoPesquisa2
+  Caption = 'frmPadraoPesquisa2'
+  PixelsPerInch = 96
+  TextHeight = 13
+end

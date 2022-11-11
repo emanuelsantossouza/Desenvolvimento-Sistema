@@ -25,6 +25,7 @@ type
     procedure btnAdicionarClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
+    procedure btnPesquisarClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -38,12 +39,19 @@ implementation
 
 {$R *.dfm}
 
-uses untModulo;
+uses untModulo, untPesCliente;
 
 procedure TfrmCadCliente.btnAdicionarClick(Sender: TObject);
 begin
   inherited;
   modulo.qryClienteIDCLIENTE.AsString := Modulo.AutoNum('IDCLIENTE' ,'Cliente');
+end;
+
+procedure TfrmCadCliente.btnPesquisarClick(Sender: TObject);
+begin
+  inherited;
+  Application.CreateForm(TfrmPesCliente, frmPesCliente);
+  frmPesCliente.show;
 end;
 
 procedure TfrmCadCliente.FormCreate(Sender: TObject);

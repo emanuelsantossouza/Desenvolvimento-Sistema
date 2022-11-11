@@ -9,10 +9,19 @@ inherited frmCadCliente: TfrmCadCliente
   inherited pnlBotoes: TPanel
     Top = 416
     Width = 817
+    ExplicitTop = 416
+    ExplicitWidth = 817
     inherited btnAdicionar: TBitBtn
       Left = 0
       Top = -2
       ExplicitLeft = 0
+      ExplicitTop = -2
+    end
+    inherited btnPesquisar: TBitBtn
+      Left = 378
+      Top = -2
+      OnClick = btnPesquisarClick
+      ExplicitLeft = 378
       ExplicitTop = -2
     end
   end
@@ -23,7 +32,7 @@ inherited frmCadCliente: TfrmCadCliente
     Width = 817
     Height = 271
     ExplicitWidth = 817
-    ExplicitHeight = 248
+    ExplicitHeight = 271
     object Label1: TLabel
       Left = 16
       Top = 8
