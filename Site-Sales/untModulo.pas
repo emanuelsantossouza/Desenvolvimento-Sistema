@@ -33,6 +33,12 @@ type
     qryClienteFONECLIENTE: TStringField;
     qryClienteIDCIDADE: TIntegerField;
     qryClienteNOMECIDADE: TStringField;
+    qryCursos: TFDQuery;
+    qryCursosnome: TStringField;
+    qryCursosdescricao: TMemoField;
+    qryCursoscarga: TIntegerField;
+    qryCursostotaulas: TIntegerField;
+    qryCursosano: TWordField;
   private
     { Private declarations }
   public

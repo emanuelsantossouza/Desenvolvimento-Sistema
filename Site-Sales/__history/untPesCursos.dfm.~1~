@@ -1,0 +1,14 @@
+inherited frmPesCursos: TfrmPesCursos
+  Caption = 'frmPesCursos'
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited pnlPesquisa: TPanel
+    ExplicitTop = 284
+  end
+  inherited pnlCampos: TPanel
+    ExplicitLeft = 0
+    ExplicitTop = 120
+    ExplicitWidth = 527
+    ExplicitHeight = 164
+  end
+end

@@ -20,7 +20,6 @@ object frmPadraoPesquisa: TfrmPadraoPesquisa
     Height = 80
     Align = alBottom
     TabOrder = 0
-    ExplicitTop = 201
     object btnFechar: TBitBtn
       Left = 76
       Top = 0
@@ -291,13 +290,9 @@ object frmPadraoPesquisa: TfrmPadraoPesquisa
     Align = alClient
     Caption = 'pnlCampos'
     TabOrder = 2
-    ExplicitLeft = 176
-    ExplicitTop = 192
-    ExplicitWidth = 185
-    ExplicitHeight = 41
   end
   object dtsPesquisa: TDataSource
-    Left = 440
+    Left = 448
     Top = 300
   end
 end

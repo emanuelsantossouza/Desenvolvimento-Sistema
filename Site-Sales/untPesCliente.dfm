@@ -7,12 +7,48 @@ inherited frmPesCliente: TfrmPesCliente
       OnClick = btnPesquisarClick
     end
   end
+  inherited dbgPesquisa: TDBGrid
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'IDCLIENTE'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'NOMECLIENTE'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'ENDERCLIENTE'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'CPFCLIENTE'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'FONECLIENTE'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'IDCIDADE'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'NOMECIDADE'
+        Visible = True
+      end>
+  end
   inherited pnlCampos: TPanel
     Caption = ''
-    ExplicitLeft = -8
+    ExplicitLeft = 3
     ExplicitTop = 114
-    ExplicitWidth = 527
-    ExplicitHeight = 164
     object Label1: TLabel
       Left = 16
       Top = 23

@@ -90,7 +90,7 @@ object Modulo: TModulo
     Connection = conexao
     SQL.Strings = (
       'SELECT * FROM CLIENTE')
-    Left = 432
+    Left = 392
     Top = 96
     object qryClienteIDCLIENTE: TIntegerField
       FieldName = 'IDCLIENTE'
@@ -135,6 +135,40 @@ object Modulo: TModulo
       KeyFields = 'IDCIDADE'
       Size = 50
       Lookup = True
+    end
+  end
+  object qryCursos: TFDQuery
+    Connection = conexao
+    SQL.Strings = (
+      'select * from cursos')
+    Left = 448
+    Top = 96
+    object qryCursosnome: TStringField
+      FieldName = 'nome'
+      Origin = 'nome'
+      Required = True
+      Size = 30
+    end
+    object qryCursosdescricao: TMemoField
+      AutoGenerateValue = arDefault
+      FieldName = 'descricao'
+      Origin = 'descricao'
+      BlobType = ftMemo
+    end
+    object qryCursoscarga: TIntegerField
+      AutoGenerateValue = arDefault
+      FieldName = 'carga'
+      Origin = 'carga'
+    end
+    object qryCursostotaulas: TIntegerField
+      AutoGenerateValue = arDefault
+      FieldName = 'totaulas'
+      Origin = 'totaulas'
+    end
+    object qryCursosano: TWordField
+      AutoGenerateValue = arDefault
+      FieldName = 'ano'
+      Origin = 'ano'
     end
   end
 end
