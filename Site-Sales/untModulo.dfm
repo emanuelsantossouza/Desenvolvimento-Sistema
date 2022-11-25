@@ -28,7 +28,7 @@ object Modulo: TModulo
     Connection = conexao
     SQL.Strings = (
       'select * from cidade')
-    Left = 176
+    Left = 512
     Top = 96
     object qryCidadeIDCIDADE: TIntegerField
       FieldName = 'IDCIDADE'

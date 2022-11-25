@@ -35,17 +35,17 @@ procedure TfrmPesCursos.btnPesquisarClick(Sender: TObject);
 var vPesq: string;
 begin
   inherited;
-  vPesq := ' SELECT * FROM '+
-            ' WHERE nome IS NOT NULL';
+  vPesq := ' SELECT * FROM CURSOS '+
+            ' WHERE IDCURSOS IS NOT NULL';
 
   if edtNome.Text <> '' then
-    vPesq := vPesq + 'AND nome = '+ edtNome.Text;
+    vPesq := vPesq + ' AND nome LIKE '+ QuotedStr('%'+edtNome.Text+'%');
 
   if edtCarga.Text <> '' then
-  vPesq := vPesq + 'AND Carga LIKE'+ QuotedStr('%'+edtCarga.text+'%');
+  vPesq := vPesq + ' AND Carga = '+ edtCarga.text;
 
   if edtAno.Text <> '' then
-  vPesq := vPesq + 'AND Ano LIKE '+ QuotedStr('%'+edtAno.text+'%');
+  vPesq := vPesq + ' AND Ano LIKE '+ QuotedStr('%'+edtAno.text+'%');
 
 
   modulo.qryCursos.SQL.CommaText := vPesq;

@@ -4,12 +4,13 @@ inherited frmPesCursos: TfrmPesCursos
   TextHeight = 13
   inherited pnlPesquisa: TPanel
     inherited btnPesquisar: TBitBtn
+      Left = 1
       OnClick = btnPesquisarClick
+      ExplicitLeft = 1
     end
   end
   inherited pnlCampos: TPanel
     Caption = ''
-    ExplicitTop = 114
     object Label1: TLabel
       Left = 30
       Top = 45
